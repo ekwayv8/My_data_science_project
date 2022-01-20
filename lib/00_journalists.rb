@@ -26,3 +26,19 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "2) Le handle le plus court est #{shortest_handle(handle)}"
 
+
+#3rd Method providing an answer to this question :"Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)?"
+
+def five_character(five_character_handle)
+	array = five_character_handle.select do |counting| 
+		counting.match(/^@/)
+	end
+	arr_of_five = array.select do |str| 
+		str.size == 6
+	end
+
+	arr_of_five.length
+end
+
+#In order to test this you have to use the method and replace the variable with the array name
+puts "3) Nous disposons de #{five_character(handle)} handle contenant 5 caractères (sans tenir compte du @ of course)"
