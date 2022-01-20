@@ -80,6 +80,16 @@ puts "6) Voici la liste des handle triés par taille ! orlalalala ! what a great
  #{order_handle_size(handle)}"
 
 
+ #7th Method providing an answer to this question :"Quelle est la position dans l'array de la personne @epenser ?"
+
+def find_epenser (id_epenser)
+	id_epenser.index("@epenser")
+end
+
+#In order to test this you have to use the method and replace the variable with the array name
+puts "6) Ce charmant @epenser se cache à la position N°#{find_epenser(handle)}"
+
+
 
 
 
