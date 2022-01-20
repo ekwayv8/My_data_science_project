@@ -87,10 +87,19 @@ def find_epenser (id_epenser)
 end
 
 #In order to test this you have to use the method and replace the variable with the array name
-puts "6) Ce charmant @epenser se cache à la position N°#{find_epenser(handle)}"
+puts "7) Ce charmant @epenser se cache à la position N°#{find_epenser(handle)}"
 
+#8th Method providing an answer to this question :"Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
 
-
-
+#def order_all(order_handle)
+#	journalist = order_handle.sort_by { |x| x.length }
+#	 cinquante= journalist[0..49]
+	
+#	cinquante.each_with_index do |hand, id|
+#	puts "#{id} :  #{hand}"
+#	end
+#end
+#In order to test this you have to use the method and replace the variable with the array name
+#puts "8) Ce charmant @epenser se cache à la position N°#{order_all(handle)}"
 
 
