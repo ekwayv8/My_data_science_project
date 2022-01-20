@@ -19,8 +19,16 @@ crypto = ["Bitcoin", "Ethereum", "XRP", "Bitcoin Cash", "EOS", "Litecoin", "Card
 
 #Now that i have access to the data i can create my hash
 
- my_hash = Hash[price.zip(crypto)]
+ my_hash = Hash[crypto.zip(price)]
 
  puts "Le voici! vous l'attendiez! Le magnifique Hash des cryptos! Enjoy 
 
  #{my_hash}"
+
+
+#9th Method providing an answer to this question :La ou les crypto qui ont la plus grosse valeur.
+def crypto_high(high_val)
+    high_val.sort_by{ |k, v| v.to_f}.reverse[0]
+end
+
+puts "la crypto disposant de la plus grosse valeur (et d'ailleur comme je suis sympa je te donne sa valeur c'est cadeau) : #{crypto_high(my_hash)}"
