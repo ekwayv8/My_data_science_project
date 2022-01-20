@@ -56,3 +56,12 @@ puts "11) Nous avons fait le TAF pour toi! Il en te reste plus qu'à investir au
 
  #{crypto_under(my_hash)}"
 
+#11th Method providing an answer to this question :La devise la plus chère parmi celles dont le cours est inférieur à 6000.
+def crypto_under_pricy(under_6K_pricy)
+    crypto_under(under_6K_pricy).sort_by{ |k, v| v.to_f}.reverse[0]
+end
+
+puts " "
+
+puts "12) Enfin, voici la crypto la plus chère parmi celles dont le cours est inférieur à 6000 #{crypto_under_pricy(my_hash)}" 
+
