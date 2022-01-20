@@ -42,3 +42,19 @@ end
 
 #In order to test this you have to use the method and replace the variable with the array name
 puts "3) Nous disposons de #{five_character(handle)} handle contenant 5 caractères (sans tenir compte du @ of course)"
+
+
+#4th Method providing an answer to this question :"Combien commencent par une majuscule (première lettre juste après le @)?"
+
+def handle_maj(first_maj)
+	arr_result = first_maj.select do |word| 
+		word.match(/^@[A-Z]/) 
+	end
+	arr_result.length
+end
+
+#In order to test this you have to use the method and replace the variable with the array name
+puts "4) au sein de notre splendide array de handle, nous retrouvons #{handle_maj(handle)} handle qui commencent par une majuscule (sans tenir compte du @ of course)"
+
+
+
