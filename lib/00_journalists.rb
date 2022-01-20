@@ -57,9 +57,7 @@ end
 puts "4) au sein de notre splendide array de handle, nous retrouvons #{handle_maj(handle)} handle qui commencent par une majuscule (sans tenir compte du @ of course)"
 
 
-
 #5th Method providing an answer to this question :"Trie la liste de handle par ordre alphabétique."
-
 
 def order_handle(order)
 	order.sort
@@ -69,5 +67,17 @@ end
 puts "5) Voici la liste des handle triés par ordre alphabétique: Enjoy :) 
 
  #{order_handle(handle)}"
+
+#6th Method providing an answer to this question :"Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
+
+def order_handle_A_to_Z (order_A_to_Z)
+	order_A_to_Z.sort_by(&:length)
+end
+
+#In order to test this you have to use the method and replace the variable with the array name
+puts "6) Voici la liste des handle triés par taille ! orlalalala ! what a great thing :) 
+
+ #{order_handle_A_to_Z(handle)}"
+
 
 
