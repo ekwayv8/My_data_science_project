@@ -58,3 +58,16 @@ puts "4) au sein de notre splendide array de handle, nous retrouvons #{handle_ma
 
 
 
+#5th Method providing an answer to this question :"Trie la liste de handle par ordre alphabétique."
+
+
+def order_handle(order)
+	order.sort
+end
+
+#In order to test this you have to use the method and replace the variable with the array name
+puts "5) Voici la liste des handle triés par ordre alphabétique: Enjoy :) 
+
+ #{order_handle(handle)}"
+
+
