@@ -25,10 +25,22 @@ crypto = ["Bitcoin", "Ethereum", "XRP", "Bitcoin Cash", "EOS", "Litecoin", "Card
 
  #{my_hash}"
 
+puts " "
 
 #9th Method providing an answer to this question :La ou les crypto qui ont la plus grosse valeur.
 def crypto_high(high_val)
     high_val.sort_by{ |k, v| v.to_f}.reverse[0]
 end
 
-puts "la crypto disposant de la plus grosse valeur (et d'ailleur comme je suis sympa je te donne sa valeur c'est cadeau) : #{crypto_high(my_hash)}"
+puts "9) la crypto disposant de la plus grosse valeur (et d'ailleur comme je suis sympa je te donne sa valeur c'est cadeau) : #{crypto_high(my_hash)}"
+
+puts " "
+
+#9th Method providing an answer to this question :La ou les crypto qui ont la plus grosse valeur.
+def crypto_small(small_val)
+    small_val.sort_by{ |k, v| v.to_f}[0]
+end
+
+puts " "
+
+puts "10) la crypto disposant de la plus petite valeur (et d'ailleur comme je suis sympa je te donne sa valeur c'est cadeau) : #{crypto_small(my_hash)}"
