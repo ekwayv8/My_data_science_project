@@ -1,4 +1,4 @@
-# Welcome ! 🥳🥳 Welcome ! 🕺🏾🥳🥳
+# Welcome ! 🥳🥳 Welcome ! 👨🏾‍💻🕺🏾🥳🥳
 
 
 ### This is the structure of my repository
@@ -11,4 +11,4 @@ My_data_science_project
 └── README.md
 ```
 * * *
-### I Hope you will enjoy reviewing it . PEACE :) 
+### I Hope you will enjoy reviewing it . PEACE  😊
