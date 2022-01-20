@@ -14,7 +14,7 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "1) Nous disposons de #{count_handle(handle)} handle dans cette array"
 
-
+puts " "
 
 #2nd Method providing an answer to this question :"Quel est le handle le plus court de cette liste ?"
 
@@ -26,6 +26,7 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "2) Le handle le plus court est #{shortest_handle(handle)}"
 
+puts " "
 
 #3rd Method providing an answer to this question :"Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)?"
 
@@ -43,6 +44,7 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "3) Nous disposons de #{five_character(handle)} handle contenant 5 caractères (sans tenir compte du @ of course)"
 
+puts " "
 
 #4th Method providing an answer to this question :"Combien commencent par une majuscule (première lettre juste après le @)?"
 
@@ -56,6 +58,7 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "4) au sein de notre splendide array de handle, nous retrouvons #{handle_maj(handle)} handle qui commencent par une majuscule (sans tenir compte du @ of course)"
 
+puts " "
 
 #5th Method providing an answer to this question :"Trie la liste de handle par ordre alphabétique."
 
@@ -75,8 +78,9 @@ def order_handle_size (order_size)
 end
 
 #In order to test this you have to use the method and replace the variable with the array name
-puts "6) Voici la liste des handle triés par taille ! orlalalala ! what a great thing :) 
+puts "6) Voici la liste des handle triés par taille ! orlalalala ! what a great thing :)" 
 
+puts " "
  #{order_handle_size(handle)}"
 
 
@@ -89,17 +93,30 @@ end
 #In order to test this you have to use the method and replace the variable with the array name
 puts "7) Ce charmant @epenser se cache à la position N°#{find_epenser(handle)}"
 
+puts " "
+
 #8th Method providing an answer to this question :"Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
 
-#def order_all(order_handle)
-#	journalist = order_handle.sort_by { |x| x.length }
-#	 cinquante= journalist[0..49]
-	
-#	cinquante.each_with_index do |hand, id|
-#	puts "#{id} :  #{hand}"
-#	end
-#end
+puts "8) This is the last one! We are so tired! i hope you will enjoy this because i am hungry but i stay to provide this masterpiece :) "
+
+puts " "
+
+def order_all(order_handle)
+	x = 1
+#First we need to find the size of the biggest handle
+	biggest_handle = order_handle.max { |a, b| a.length <=> b.length}
+	biggest = biggest_handle.length
+
+#Then we deliver our "boucle"
+	while x <= biggest.to_i
+		if handle_num = order_handle.select { |i| i.size == x }
+			x += 1
+			num =handle_num.count
+		puts "Nous avons au sein de notre joli et sympathique array #{num} handle associés à #{x} caractères"	
+		end		
+	end
+end
 #In order to test this you have to use the method and replace the variable with the array name
-#puts "8) Ce charmant @epenser se cache à la position N°#{order_all(handle)}"
+order_all(handle)
 
 
