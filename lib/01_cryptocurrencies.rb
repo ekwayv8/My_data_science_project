@@ -36,7 +36,7 @@ puts "9) la crypto disposant de la plus grosse valeur (et d'ailleur comme je sui
 
 puts " "
 
-#9th Method providing an answer to this question :La ou les crypto qui ont la plus grosse valeur.
+#10th Method providing an answer to this question :La ou les crypto qui ont la plus petite valeur.
 def crypto_small(small_val)
     small_val.sort_by{ |k, v| v.to_f}[0]
 end
@@ -44,3 +44,15 @@ end
 puts " "
 
 puts "10) la crypto disposant de la plus petite valeur (et d'ailleur comme je suis sympa je te donne sa valeur c'est cadeau) : #{crypto_small(my_hash)}"
+
+#11th Method providing an answer to this question :Les devises dont le cours est inférieur à 6000
+def crypto_under(under_6K)
+    under_6K.select{ |k, v| v.to_f < 6000}
+end
+
+puts " "
+
+puts "11) Nous avons fait le TAF pour toi! Il en te reste plus qu'à investir au sein de cette liste de crypto disposant d'un cours inférieur à 6K: À toi les milliards
+
+ #{crypto_under(my_hash)}"
+
