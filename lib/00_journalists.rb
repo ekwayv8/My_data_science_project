@@ -12,7 +12,7 @@ def count_handle(nbr_handle)
 end
 
 #In order to test this you have to use the method and replace the variable with the array name
-puts count_handle(handle)
+puts "1) Nous disposons de #{count_handle(handle)} handle dans cette array"
 
 
 
@@ -24,5 +24,5 @@ def shortest_handle(small_handle)
 end
 
 #In order to test this you have to use the method and replace the variable with the array name
-puts shortest_handle(handle)
+puts "2) Le handle le plus court est #{shortest_handle(handle)}"
 
